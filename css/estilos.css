@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*$color1: #e7c4c4;
+
+@import "./header"; // Importamos el archivo _header.scss que es una clase parcial (no es necesario colocar el
+                    // guion bajo ni la extensión al importarla)
+                    // Es importante que el import esté debajo de las variables, por si se utilizan esas variables
+                    // en los archivos importados.
+                    // Las variables también se pueden tener en un archivo aparte y luego lo importamos al principio
+                    // de todo el documento, para que todos los archivos que importemos puedan acceder a ellas.
+
+//Mixins
+//Es una forma de reutilizar código, es como una función que se puede llamar en cualquier parte del documento
+//y que puede recibir parámetros.
+//Para crear un mixin se utiliza la palabra reservada @mixin y luego el nombre del mixin, luego se abre llaves
+//y se escriben los estilos que queremos que tenga el mixin, por último, se cierran las llaves.
+//Para llamar un mixin se utiliza la palabra reservada @include y luego el nombre del mixin.
+//Si el mixin recibe parámetros, se escriben los parámetros entre paréntesis y luego se abre llaves y se cierran.
+//Si el mixin no recibe parámetros, se abre llaves y se cierran.
+//Para llamar un mixin con parámetros, se escriben los parámetros entre paréntesis y luego se abre llaves y se cierran.
+@mixin bg-color($color){
+    background-color: $color;
+}
+
+body{
+    @include bg-color($color1); //Llamamos el mixin bg-color y le pasamos el parámetro $color1
+    display: grid;
+    min-height: 100vh;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Anidación
+.footer{
+    background-color: #fff;
+    padding: 20px;
+    .paragraph{
+        color: #000;
+        margin: 0;
+    }
+    .link{
+        //Agregar estilos a las pseudoclases
+        &:hover{
+            color: rgb(49, 52, 241);
+        }
+    }
+}
+
+//Clases parciales
+//Para esto debemos crear un archivo con el nombre de la clase y la extensión .scss, pero este debe iniciar con guion bajo (_), luego
+//escribimos allá los estilos css que queramos darle a esa clase, por último, impportamos el archivo.
+
+//Operadores
+//Para sumar se utiliza el signo +
+//Para restar se utiliza el signo -
+//Para multiplicar se utiliza el signo *
+//Para dividir se utiliza el signo /
+//Estos operadores se pueden utilizar en propiedades como la altura, por ejemplo.
+
+//Extend
+//Con el extend podemos extender las propiedades de una clase a otra, por ejemplo, si tenemos una clase .btn y queremos que
+//tenga las mismas propiedades que la clase .link, podemos hacer lo siguiente:
+.btn{
+    @extend .link;
+}
+*//*# sourceMappingURL=estilos.css.map */
