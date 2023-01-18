@@ -371,6 +371,100 @@ header{
             }
         }
     }
+    .menu-platos{
+        padding: 5.625rem 0;
+
+        .container{
+            .titulo-seccion{
+                h2{
+                    text-align: center;
+                }
+            }
+            .contenedor-menu{
+                margin-top: 2.5rem;
+
+                .encabezado{
+                    font-weight: 600;
+                    font-family: $fuente-secundaria;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+
+                    li{
+                        a{
+                            font-size: 0.75rem;
+                            padding: 0 1.4375rem 1.125rem;
+                            display: block;
+                            cursor: pointer;
+                            -o-transition: all 0.3s ease;
+                            -webkit-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                            border-bottom: 2px solid transparent;
+
+                            &:hover{
+                                color: $dorado;
+                            }
+                        }
+
+                        &.active{
+                            a{
+                                color: $dorado;
+                                border-bottom: 2px solid $dorado;
+                            }
+                        }
+                    }
+                }
+                .contenido{
+                    max-width: 50rem;
+                    margin: 0 auto;
+                    margin-top: 2.5rem;
+                    border: 6px double $gris-claro;
+                    padding: 0 2.25rem;
+
+                    > div{
+                        display: none;
+                        -o-transition: all 0.3s ease;
+                        -webkit-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+
+                        
+                    }
+                    .active{
+                        display: block;
+                    }
+                    .item{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        padding: 2.25rem 0;
+                        border-bottom: 1px solid $gris-claro;
+
+                        .col.izq{
+                            width: 70%;
+
+                            h3{
+                                font-size: 1.5rem;
+                                font-weight: 400;
+                                margin-bottom: 0.625rem;
+                            }
+                            p{
+                                font-size: 1rem;
+                                color: $texto-claro;
+                            }
+                        }
+                        .col.der{
+                            width: 30%;
+                            text-align: center;
+                            font-size: 2.1875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
