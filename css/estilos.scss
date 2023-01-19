@@ -606,7 +606,33 @@ header{
     }
 }
 
+/*--------------------------------------------*/
+//Footer
+/*--------------------------------------------*/
 
+footer{
+    margin-top: 2.25rem;
+    background: $negro-custom;
+    padding: 5.625rem 0;
+    text-align: center;
+    color: $blanco;
+
+    .bottom-redes{
+        margin-top: 2.25rem;
+
+        a{
+            padding: 0 0.5625rem;
+            color: $blanco;
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:hover{
+                color: $dorado;
+            }
+        }
+    }
+}
 
 
 
