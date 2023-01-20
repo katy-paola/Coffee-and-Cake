@@ -114,6 +114,27 @@ a:hover {
   color: #777;
 }
 
+.imagen-modal {
+  width: 90%;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.7s ease;
+}
+.imagen-modal + i {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  color: #303133;
+  font-size: 2.25rem;
+  background: #fff;
+  display: inline-block;
+  padding: 0.75rem 0.875rem;
+  cursor: pointer;
+}
+
 /*--------------------------------------------*/
 /*--------------------------------------------*/
 header .menu-bar-pc {
@@ -137,6 +158,50 @@ header .menu-bar-pc .menu-principal a {
 }
 header .menu-bar-pc .top-redes a {
   padding: 0 0.5625rem;
+}
+header .menu-bar-movil {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2.25rem;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.875rem;
+  border-bottom: 1px solid #eaeaea;
+}
+header .menu-bar-movil .logo {
+  max-width: 3.125rem;
+}
+header .menu-bar-movil .burguer-menu {
+  cursor: pointer;
+  font-size: 2.1875rem;
+}
+header .menu-bar-movil .slideMenu {
+  position: fixed;
+  top: 5.875rem;
+  left: -80%;
+  background: #fff;
+  text-align: center;
+  padding: 1.25rem 2.25rem;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+header .menu-bar-movil .slideMenu.active {
+  left: 0;
+}
+header .menu-bar-movil .slideMenu .top-redes {
+  margin-bottom: 0.625rem;
+}
+header .menu-bar-movil .slideMenu .top-redes a {
+  padding: 0 0.5625rem;
+}
+header .menu-bar-movil .slideMenu .menu-principal a {
+  display: block;
+  padding: 0.625rem 0;
+  border-top: 1px solid #eaeaea;
 }
 
 /*--------------------------------------------*/
@@ -563,6 +628,12 @@ footer .bottom-redes a:hover {
   }
 }
 @media all and (max-width: 800px) {
+  header .menu-bar-pc {
+    display: none;
+  }
+  header .menu-bar-movil {
+    display: flex;
+  }
   .main .portada .col {
     width: 100%;
   }
