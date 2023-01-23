@@ -450,7 +450,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   position: relative;
   background-image: url("../img/contacto-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
 }
 .main .contacto .datos .overlay {
   position: absolute;
@@ -458,7 +458,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: rgba(20, 22, 24, 0.7);
+  background: rgba(20, 22, 24, 0.3);
 }
 .main .contacto .datos .container {
   position: relative;
