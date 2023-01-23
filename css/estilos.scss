@@ -648,7 +648,7 @@ header{
                             }
                         }
                     }
-                    &.error{ //esta clase la creamos para cuando el input este vacío o no cumpla con la validación
+                    .error{ //esta clase la creamos para cuando el input este vacío o no cumpla con la validación
                         position: absolute;
                         color: rgb(255, 59, 59);
                         font-family: $fuente-secundaria;

@@ -541,7 +541,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   line-height: 0.75rem;
   color: #777;
 }
-.main .contacto .formulario .formulario_contacto .input-group.error {
+.main .contacto .formulario .formulario_contacto .input-group .error {
   position: absolute;
   color: rgb(255, 59, 59);
   font-family: "Poppins", sans-serif;
